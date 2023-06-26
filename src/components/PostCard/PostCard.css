@@ -1,0 +1,182 @@
+.instgram-post {
+  color: white;
+  min-width: 28em;
+  max-width: 28em;
+  margin: 2em auto;
+}
+.instgram-post i:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+.instgram-post .igpost-header {
+  display: flex;
+  justify-content: space-between;
+}
+.instgram-post .igpost-header > .left-header {
+  display: flex;
+  align-items: center;
+}
+.instgram-post .igpost-header > .left-header > div:first-child {
+  margin-right: 0.4em;
+}
+.instgram-post .igpost-header > .left-header > div:first-child img {
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  border: 2px solid #b72082;
+}
+.instgram-post .igpost-header > .left-header > div:nth-child(2) > div {
+  display: flex;
+}
+.instgram-post .igpost-header > .left-header > div:nth-child(2) > div h5 {
+  font-size: 0.9em;
+  margin-bottom: 0rem;
+}
+.instgram-post .igpost-header > .left-header > div:nth-child(2) > div svg {
+  color: gray;
+  align-self: center;
+}
+.instgram-post .igpost-header > .left-header > div:nth-child(2) > div span {
+  color: gray;
+  font-size: 0.8em;
+}
+.instgram-post .igpost-header > .left-header > div:nth-child(2) h6 {
+  margin-bottom: 0rem;
+  text-indent: 0.5em;
+  font-weight: unset;
+  font-size: 0.7em;
+}
+.instgram-post .igpost-header > .right-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.instgram-post .igpost-header > .right-header .dropdown .dropdown-menu {
+  color: white;
+  background: #393939;
+  min-width: 12em !important;
+  inset: 0px auto auto -10em !important;
+  text-align: center;
+}
+.instgram-post .igpost-header > .right-header .dropdown .dropdown-menu li {
+  padding: 0.25em;
+}
+.instgram-post .igpost-header > .right-header .dropdown .dropdown-menu li:not(:last-child) {
+  padding: 0.25em;
+  border-bottom: 0.5px solid #a0a0a0 !important;
+}
+.instgram-post .igpost-header > .right-header .dropdown .dropdown-menu li:hover {
+  cursor: pointer;
+}
+.instgram-post .igpost-body {
+  width: 28em;
+  height: 30em;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.2em;
+  border: 1px solid rgba(128, 128, 128, 0.4823529412);
+}
+.instgram-post .igpost-body > .swap {
+  display: flex;
+  position: absolute;
+  bottom: 0.4em;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.instgram-post .igpost-body > .swap:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+.instgram-post .igpost-body > .swap-left {
+  position: absolute;
+  left: 1em;
+  top: 50%;
+}
+.instgram-post .igpost-body > .swap-right {
+  position: absolute;
+  right: 1em;
+  top: 50%;
+}
+.instgram-post .igpost-body > .swap-left,
+.instgram-post .igpost-body > .swap-right {
+  font-size: 1.4em;
+}
+.instgram-post .igpost-body > .swap-left:hover,
+.instgram-post .igpost-body > .swap-right:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+.instgram-post .igpost-footer .igpf-upper {
+  display: flex;
+  justify-content: space-between;
+}
+.instgram-post .igpost-footer .igpf-upper .share,
+.instgram-post .igpost-footer .igpf-upper .comment,
+.instgram-post .igpost-footer .igpf-upper .heartOut,
+.instgram-post .igpost-footer .igpf-upper .heartFill,
+.instgram-post .igpost-footer .igpf-upper .bookmark {
+  margin: 0.15em;
+  font-size: 1.4em;
+  font-weight: bolder;
+}
+.instgram-post .igpost-footer .igpf-upper .heartFill {
+  color: red;
+}
+.instgram-post .igpost-footer .igpf-lower {
+  font-size: 0.9em;
+}
+.instgram-post .igpost-footer .igpf-lower > div:first-child > p {
+  margin-bottom: 0.25em;
+}
+.instgram-post .igpost-footer .igpf-lower > div:first-child > div {
+  font-size: 0.9em;
+}
+.instgram-post .igpost-footer .igpf-lower > div:first-child > div > strong {
+  font-size: 1.1em !important;
+}
+.instgram-post .igpost-footer .igpf-lower > div:nth-child(2) {
+  color: #7b7b7b;
+  cursor: pointer;
+}
+.instgram-post .igpost-footer .igpf-lower > div:last-child {
+  position: relative;
+}
+.instgram-post .igpost-footer .igpf-lower > div:last-child > i > svg:first-child {
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+}
+.instgram-post .igpost-footer .igpf-lower > div:last-child > i > div {
+  position: absolute;
+  top: -32em;
+  right: 3em;
+}
+.instgram-post .igpost-footer .igpf-lower > div:last-child > p {
+  position: absolute;
+  right: 2em;
+  top: 0.2em;
+  cursor: pointer;
+  color: #003cff;
+}
+.instgram-post .igpost-footer .igpf-lower > div:last-child .form-control {
+  border: unset;
+  padding: 0em;
+  padding-top: 0.35em;
+  padding-bottom: 0.65em;
+  border-bottom: 0.5px solid rgba(109, 109, 109, 0.5333333333);
+  border-radius: unset;
+  background: black;
+  color: white;
+}
+.instgram-post .igpost-footer .igpf-lower > div:last-child .form-control::-moz-placeholder {
+  color: #606060;
+}
+.instgram-post .igpost-footer .igpf-lower > div:last-child .form-control::placeholder {
+  color: #606060;
+}
+.instgram-post .igpost-footer .igpf-lower > div:last-child .form-control:focus {
+  box-shadow: unset;
+}/*# sourceMappingURL=PostCard.css.map */

@@ -1,0 +1,41 @@
+.ig-aside-bar {
+  border-left: 0.5px solid #80808071;
+  padding-top: 2em;
+  padding-left: 1em;
+
+  .user-info:not(:last-child) {
+    border-bottom-width: 60%;
+    border-bottom: 1px solid #7d7d7d4a;
+  }
+
+  .user-info {
+    color: white;
+    display: flex;
+    margin-top: 1em;
+
+    > div:first-child {
+      margin-right: 0.5em;
+      img {
+        height: 2.5em;
+        width: 2.5em;
+        border-radius: 50%;
+      }
+      img:hover {
+        cursor: pointer;
+      }
+    }
+
+    > div:nth-child(2) {
+      p {
+        font-size: 0.9em;
+        margin-bottom: 0em;
+      }
+      > div {
+        display: flex;
+        align-items: center;
+        font-size: 0.8em;
+        font-weight: bold;
+      }
+    }
+  }
+}

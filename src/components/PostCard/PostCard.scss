@@ -1,0 +1,196 @@
+.instgram-post {
+  color: white;
+  min-width: 28em;
+  max-width: 28em;
+  margin: 2em auto;
+
+  i:hover {
+    opacity: 80%;
+    cursor: pointer;
+  }
+  .igpost-header {
+    display: flex;
+    justify-content: space-between;
+    > .left-header {
+      display: flex;
+      align-items: center;
+
+      > div:first-child {
+        margin-right: 0.4em;
+        img {
+          height: 2.5em;
+          width: 2.5em;
+          border-radius: 50%;
+          border: 2px solid #b72082;
+        }
+      }
+      > div:nth-child(2) {
+        > div {
+          display: flex;
+
+          h5 {
+            font-size: 0.9em;
+            margin-bottom: 0rem;
+          }
+          svg {
+            color: gray;
+            align-self: center;
+          }
+          span {
+            color: gray;
+            font-size: 0.8em;
+          }
+        }
+        h6 {
+          margin-bottom: 0rem;
+          text-indent: 0.5em;
+          font-weight: unset;
+          font-size: 0.7em;
+        }
+      }
+    }
+    > .right-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .dropdown {
+        .dropdown-menu {
+          color: white;
+          background: #393939;
+          min-width: 12em !important;
+          inset: 0px auto auto -10em !important;
+          text-align: center;
+
+          li {
+            padding: 0.25em;
+          }
+          li:not(:last-child) {
+            padding: 0.25em;
+            border-bottom: 0.5px solid #a0a0a0 !important;
+          }
+          li:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .igpost-body {
+    width: 28em;
+    height: 30em;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.2em;
+    border: 1px solid #8080807b;
+
+    > .swap {
+      display: flex;
+      position: absolute;
+      bottom: 0.4em;
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+    > .swap:hover {
+      opacity: 80%;
+      cursor: pointer;
+    }
+    > .swap-left {
+      position: absolute;
+      left: 1em;
+      top: 50%;
+    }
+    > .swap-right {
+      position: absolute;
+      right: 1em;
+      top: 50%;
+    }
+    > .swap-left,
+    > .swap-right {
+      font-size: 1.4em;
+    }
+    > .swap-left:hover,
+    > .swap-right:hover {
+      opacity: 80%;
+      cursor: pointer;
+    }
+  }
+  .igpost-footer {
+    .igpf-upper {
+      display: flex;
+      justify-content: space-between;
+
+      .share,
+      .comment,
+      .heartOut,
+      .heartFill,
+      .bookmark {
+        margin: 0.15em;
+        font-size: 1.4em;
+        font-weight: bolder;
+      }
+      .heartFill {
+        color: red;
+      }
+    }
+    .igpf-lower {
+      font-size: 0.9em;
+      > div:first-child {
+        > p {
+          margin-bottom: 0.25em;
+        }
+        > div {
+          > strong {
+            font-size: 1.1em !important;
+          }
+          font-size: 0.9em;
+        }
+      }
+      > div:nth-child(2) {
+        color: #7b7b7b;
+        cursor: pointer;
+      }
+      > div:last-child {
+        position: relative;
+        > i {
+          > svg:first-child {
+            position: absolute;
+            right: 0.5em;
+            top: 0.5em;
+          }
+          >div{
+            position: absolute;
+            top: -32em;
+            right: 3em;
+          }
+        }
+        > p {
+          position: absolute;
+          right: 2em;
+          top: 0.2em;
+          cursor: pointer;
+          color: #003cff;
+        }
+        .form-control {
+          border: unset;
+          padding: 0em;
+          padding-top: 0.35em;
+          padding-bottom: 0.65em;
+          border-bottom: 0.5px solid #6d6d6d88;
+          border-radius: unset;
+          background: black;
+          color: white;
+        }
+        .form-control::placeholder {
+          color: #606060;
+        }
+        .form-control:focus {
+          box-shadow: unset;
+        }
+      }
+    }
+  }
+}

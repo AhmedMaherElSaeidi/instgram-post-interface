@@ -1,0 +1,35 @@
+.ig-aside-bar {
+  border-left: 0.5px solid rgba(128, 128, 128, 0.4431372549);
+  padding-top: 2em;
+  padding-left: 1em;
+}
+.ig-aside-bar .user-info:not(:last-child) {
+  border-bottom-width: 60%;
+  border-bottom: 1px solid rgba(125, 125, 125, 0.2901960784);
+}
+.ig-aside-bar .user-info {
+  color: white;
+  display: flex;
+  margin-top: 1em;
+}
+.ig-aside-bar .user-info > div:first-child {
+  margin-right: 0.5em;
+}
+.ig-aside-bar .user-info > div:first-child img {
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+}
+.ig-aside-bar .user-info > div:first-child img:hover {
+  cursor: pointer;
+}
+.ig-aside-bar .user-info > div:nth-child(2) p {
+  font-size: 0.9em;
+  margin-bottom: 0em;
+}
+.ig-aside-bar .user-info > div:nth-child(2) > div {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  font-weight: bold;
+}/*# sourceMappingURL=AsideBar.css.map */
