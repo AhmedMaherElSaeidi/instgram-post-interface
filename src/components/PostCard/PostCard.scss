@@ -1,4 +1,8 @@
 .instgram-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
   min-width: 28em;
   max-width: 28em;
@@ -161,7 +165,7 @@
             right: 0.5em;
             top: 0.5em;
           }
-          >div{
+          > div {
             position: absolute;
             top: -32em;
             right: 3em;
@@ -191,6 +195,20 @@
           box-shadow: unset;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .instgram-post {
+    margin: 0.5em auto;
+    .igpost-header,
+    .igpost-body,
+    .igpost-footer {
+      width: 24rem;
+    }
+    .igpost-body {
+      height: 28rem;
     }
   }
 }
